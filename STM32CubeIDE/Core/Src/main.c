@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
-#include "Exercise 1.h"
+#include "Exercise 1 2 3 4 5 6 7 8 9 10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -110,7 +110,7 @@ int main(void)
 	  if (timer_flag[0]==1){
 		  setTimer(0,100);
 		  HAL_GPIO_TogglePin(pa5_GPIO_Port, pa5_Pin);
-		  //HAL_GPIO_TogglePin(pa4_GPIO_Port, pa4_Pin);
+		  HAL_GPIO_WritePin(pa4_GPIO_Port, pa4_Pin,SET);
 	  }
 //	  if (timer_flag[1]==1){
 //		  setTimer(1,100);
@@ -146,17 +146,17 @@ int main(void)
 //	  }
 	  if (timer_flag[6]==1){
 		  setTimer(6,1);
-		  if (status>=0&&status<25){updateLEDMatrix0(haha);}
-		  if (status>=25&&status<50){updateLEDMatrix1(haha);}
-		  if (status>=50&&status<75){updateLEDMatrix2(haha);}
-		  if (status>=75&&status<100){updateLEDMatrix3(haha);}
-		  if (status>=100&&status<125){updateLEDMatrix4(haha);}
-		  if (status>=125&&status<150){updateLEDMatrix5(haha);}
-		  if (status>=150&&status<175){updateLEDMatrix6(haha);}
-		  if (status>=175&&status<200){updateLEDMatrix7(haha);}
+		  if (status>=0&&status<24){updateLEDMatrix0(haha);}
+		  if (status>=24&&status<48){updateLEDMatrix1(haha);}
+		  if (status>=48&&status<72){updateLEDMatrix2(haha);}
+		  if (status>=72&&status<96){updateLEDMatrix3(haha);}
+		  if (status>=96&&status<120){updateLEDMatrix4(haha);}
+		  if (status>=120&&status<144){updateLEDMatrix5(haha);}
+		  if (status>=144&&status<168){updateLEDMatrix6(haha);}
+		  if (status>=168&&status<196){updateLEDMatrix7(haha);}
 		  //updateLEDMatrix2(haha);
 		  haha=(haha+1)%8;
-		  status=(status+1)%200;
+		  status=(status+1)%196;
 
 	  }
     /* USER CODE END WHILE */
