@@ -74,7 +74,7 @@ int main(void)
   setTimer(4,75);
   setTimer(5,0);
   setTimer(6,0);
-  int hour=15, minute=8,second=50;
+//  int hour=15, minute=8,second=50;
   int haha=0;
   int status=0;
   /* USER CODE END 1 */
@@ -110,48 +110,55 @@ int main(void)
 	  if (timer_flag[0]==1){
 		  setTimer(0,100);
 		  HAL_GPIO_TogglePin(pa5_GPIO_Port, pa5_Pin);
-		  HAL_GPIO_TogglePin(pa4_GPIO_Port, pa4_Pin);
+		  //HAL_GPIO_TogglePin(pa4_GPIO_Port, pa4_Pin);
 	  }
-	  if (timer_flag[1]==1){
-		  setTimer(1,100);
-		  update7SEG(0);
-	  }
-	  if (timer_flag[2]==1){
-		  setTimer(2,100);
-		  update7SEG(1);
-	  }
-	  if (timer_flag[3]==1){
-		  setTimer(3,100);
-		  update7SEG(2);
-	  }
-	  if (timer_flag[4]==1){
-		  setTimer(4,100);
-		  update7SEG(3);
-	  }
-	  if (timer_flag[5]==1){
-		  setTimer(5,100);
-		  second++;
-		  if (second>=60){
-		  	  second=0;
-		  	  minute++;
-		  }
-		  if (minute>=60){
-		  	  minute=0;
-		  	  hour++;
-		  }
-		  if (hour>=24){
-			  hour=0;
-		  }
-		  updateClockBuffer(hour,minute);
-	  }
-//	  if (timer_flag[6]==1){
-//		  setTimer(6,1);
-//		  //if (status<=999){updateLEDMatrix0(haha);}
-//		  //if (status<=1999){updateLEDMatrix1(haha);}
-//		  updateLEDMatrix1(haha);
-//		  haha=(haha+1)%8;
-//		  //status=(status+1)%2000;
+//	  if (timer_flag[1]==1){
+//		  setTimer(1,100);
+//		  update7SEG(0);
 //	  }
+//	  if (timer_flag[2]==1){
+//		  setTimer(2,100);
+//		  update7SEG(1);
+//	  }
+//	  if (timer_flag[3]==1){
+//		  setTimer(3,100);
+//		  update7SEG(2);
+//	  }
+//	  if (timer_flag[4]==1){
+//		  setTimer(4,100);
+//		  update7SEG(3);
+//	  }
+//	  if (timer_flag[5]==1){
+//		  setTimer(5,100);
+//		  second++;
+//		  if (second>=60){
+//		  	  second=0;
+//		  	  minute++;
+//		  }
+//		  if (minute>=60){
+//		  	  minute=0;
+//		  	  hour++;
+//		  }
+//		  if (hour>=24){
+//			  hour=0;
+//		  }
+//		  updateClockBuffer(hour,minute);
+//	  }
+	  if (timer_flag[6]==1){
+		  setTimer(6,50);
+		  if (status>=0&&status<100){updateLEDMatrix0(haha);}
+		  if (status>=100&&status<200){updateLEDMatrix1(haha);}
+		  if (status>=200&&status<300){updateLEDMatrix2(haha);}
+		  if (status>=300&&status<400){updateLEDMatrix3(haha);}
+		  if (status>=400&&status<500){updateLEDMatrix4(haha);}
+		  if (status>=500&&status<600){updateLEDMatrix5(haha);}
+		  if (status>=600&&status<700){updateLEDMatrix6(haha);}
+		  if (status>=700&&status<800){updateLEDMatrix7(haha);}
+		  updateLEDMatrix2(haha);
+		  haha=(haha+1)%8;
+		  status=(status+1)%200;
+
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
