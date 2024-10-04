@@ -75,8 +75,8 @@ int main(void)
   setTimer(5,0);
   setTimer(6,0);
   int hour=15, minute=8,second=50;
-  int haha=0;
-  int status=0;
+  //int haha=0;
+  //int status=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
