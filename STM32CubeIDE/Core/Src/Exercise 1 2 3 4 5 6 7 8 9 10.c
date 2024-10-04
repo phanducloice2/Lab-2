@@ -1,4 +1,10 @@
 /*
+ * Exercise 1 2 3 4 5 6 7 8 9 10.c
+ *
+ *  Created on: 4 thg 10, 2024
+ *      Author: Phan Duc Loi
+ */
+/*
  * Exercise 1.c
  *
  *  Created on: Oct 4, 2024
@@ -519,11 +525,11 @@ void updateLEDMatrix3(int index){
 	switch (index){
 	case 0:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
 		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
@@ -539,14 +545,14 @@ void updateLEDMatrix3(int index){
 		break;
 	case 1:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, RESET);
@@ -560,13 +566,13 @@ void updateLEDMatrix3(int index){
 	case 2:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -580,13 +586,13 @@ void updateLEDMatrix3(int index){
 	case 3:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -599,14 +605,14 @@ void updateLEDMatrix3(int index){
 		break;
 	case 4:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
 		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -620,13 +626,13 @@ void updateLEDMatrix3(int index){
 	case 5:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -640,13 +646,13 @@ void updateLEDMatrix3(int index){
 	case 6:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -660,13 +666,13 @@ void updateLEDMatrix3(int index){
 	case 7:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -686,14 +692,14 @@ void updateLEDMatrix4(int index){
 	switch (index){
 	case 0:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, RESET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -706,14 +712,14 @@ void updateLEDMatrix4(int index){
 		break;
 	case 1:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, RESET);
@@ -747,13 +753,13 @@ void updateLEDMatrix4(int index){
 	case 3:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -766,14 +772,14 @@ void updateLEDMatrix4(int index){
 		break;
 	case 4:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -787,13 +793,13 @@ void updateLEDMatrix4(int index){
 	case 5:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -807,13 +813,13 @@ void updateLEDMatrix4(int index){
 	case 6:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -827,13 +833,13 @@ void updateLEDMatrix4(int index){
 	case 7:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -856,11 +862,11 @@ void updateLEDMatrix5(int index){
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, RESET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -873,14 +879,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 1:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, RESET);
@@ -893,13 +899,13 @@ void updateLEDMatrix5(int index){
 		break;
 	case 2:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
 		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
 		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
@@ -913,14 +919,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 3:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -933,14 +939,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 4:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -953,14 +959,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 5:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -973,14 +979,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 6:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -993,14 +999,14 @@ void updateLEDMatrix5(int index){
 		break;
 	case 7:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+				HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1023,10 +1029,10 @@ void updateLEDMatrix6(int index){
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
 		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, RESET);
@@ -1042,12 +1048,12 @@ void updateLEDMatrix6(int index){
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, RESET);
@@ -1060,14 +1066,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 2:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1080,14 +1086,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 3:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1100,14 +1106,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 4:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
 		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1120,14 +1126,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 5:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1140,14 +1146,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 6:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1160,14 +1166,14 @@ void updateLEDMatrix6(int index){
 		break;
 	case 7:
 		//COL
-		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
-		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, RESET);
+				HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
+				HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
+				HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+				HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
+				HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+				HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+				HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1190,9 +1196,9 @@ void updateLEDMatrix7(int index){
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
 		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
@@ -1209,11 +1215,11 @@ void updateLEDMatrix7(int index){
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
 		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
-		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
+		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, SET);
 		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
-		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, SET);
+		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
 		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
@@ -1228,13 +1234,13 @@ void updateLEDMatrix7(int index){
 	case 2:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1248,13 +1254,13 @@ void updateLEDMatrix7(int index){
 	case 3:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1268,13 +1274,13 @@ void updateLEDMatrix7(int index){
 	case 4:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
 		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, RESET);
 		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1288,13 +1294,13 @@ void updateLEDMatrix7(int index){
 	case 5:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1308,13 +1314,13 @@ void updateLEDMatrix7(int index){
 	case 6:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1328,13 +1334,13 @@ void updateLEDMatrix7(int index){
 	case 7:
 		//COL
 		HAL_GPIO_WritePin(pa2_GPIO_Port, pa2_Pin, SET);
-		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, RESET);
+		HAL_GPIO_WritePin(pa3_GPIO_Port, pa3_Pin, SET);
 		HAL_GPIO_WritePin(pa10_GPIO_Port, pa10_Pin, RESET);
-		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, SET);
+		HAL_GPIO_WritePin(pa11_GPIO_Port, pa11_Pin, RESET);
 		HAL_GPIO_WritePin(pa12_GPIO_Port, pa12_Pin, SET);
-		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, RESET);
+		HAL_GPIO_WritePin(pa13_GPIO_Port, pa13_Pin, SET);
 		HAL_GPIO_WritePin(pa14_GPIO_Port, pa14_Pin, RESET);
-		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, SET);
+		HAL_GPIO_WritePin(pa15_GPIO_Port, pa15_Pin, RESET);
 		//ROW
 //		HAL_GPIO_WritePin(pb8_GPIO_Port, pb8_Pin, SET);
 //		HAL_GPIO_WritePin(pb9_GPIO_Port, pb9_Pin, SET);
@@ -1482,6 +1488,10 @@ void display7SEG(int dem){
 		HAL_GPIO_WritePin(pb6_GPIO_Port, pb6_Pin, RESET);
 	}
 }
+
+
+
+
 
 
 

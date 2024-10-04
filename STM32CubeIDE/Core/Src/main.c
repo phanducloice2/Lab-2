@@ -18,11 +18,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include "Exercise 1 2 3 4 5 6 7 8 9 10.h"
 #include "main.h"
 //hehe
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Exercise 1 2 3 4 5 6 7 8 9 10.h"
+
 #include "software_timer.h"
 /* USER CODE END Includes */
 
@@ -75,8 +76,8 @@ int main(void)
   setTimer(5,0);
   setTimer(6,0);
   int hour=15, minute=8,second=50;
-  int haha=0;
-  int status=0;
+  //int haha=0;
+  //int status=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
