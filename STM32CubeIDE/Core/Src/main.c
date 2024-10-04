@@ -145,16 +145,16 @@ int main(void)
 //		  updateClockBuffer(hour,minute);
 //	  }
 	  if (timer_flag[6]==1){
-		  setTimer(6,50);
-		  if (status>=0&&status<100){updateLEDMatrix0(haha);}
-		  if (status>=100&&status<200){updateLEDMatrix1(haha);}
-		  if (status>=200&&status<300){updateLEDMatrix2(haha);}
-		  if (status>=300&&status<400){updateLEDMatrix3(haha);}
-		  if (status>=400&&status<500){updateLEDMatrix4(haha);}
-		  if (status>=500&&status<600){updateLEDMatrix5(haha);}
-		  if (status>=600&&status<700){updateLEDMatrix6(haha);}
-		  if (status>=700&&status<800){updateLEDMatrix7(haha);}
-		  updateLEDMatrix2(haha);
+		  setTimer(6,1);
+		  if (status>=0&&status<25){updateLEDMatrix0(haha);}
+		  if (status>=25&&status<50){updateLEDMatrix1(haha);}
+		  if (status>=50&&status<75){updateLEDMatrix2(haha);}
+		  if (status>=75&&status<100){updateLEDMatrix3(haha);}
+		  if (status>=100&&status<125){updateLEDMatrix4(haha);}
+		  if (status>=125&&status<150){updateLEDMatrix5(haha);}
+		  if (status>=150&&status<175){updateLEDMatrix6(haha);}
+		  if (status>=175&&status<200){updateLEDMatrix7(haha);}
+		  //updateLEDMatrix2(haha);
 		  haha=(haha+1)%8;
 		  status=(status+1)%200;
 
