@@ -18,12 +18,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "Exercise 1 2 3 4 5 6 7 8 9 10.h"
 #include "main.h"
 //hehe
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
-#include "Exercise 1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
